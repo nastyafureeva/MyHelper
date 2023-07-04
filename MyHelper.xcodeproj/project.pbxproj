@@ -13,6 +13,9 @@
 		2875E44D2A5424C300CB5BE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E44B2A5424C300CB5BE7 /* Main.storyboard */; };
 		2875E44F2A5424C400CB5BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2875E44E2A5424C400CB5BE7 /* Assets.xcassets */; };
 		2875E4522A5424C400CB5BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E4502A5424C400CB5BE7 /* LaunchScreen.storyboard */; };
+		2875E45F2A54280200CB5BE7 /* Tracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E45E2A54280200CB5BE7 /* Tracker.storyboard */; };
+		2875E4612A542B1100CB5BE7 /* Planer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E4602A542B1100CB5BE7 /* Planer.storyboard */; };
+		2875E4632A542B9A00CB5BE7 /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E4622A542B9A00CB5BE7 /* Diary.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2875E44E2A5424C400CB5BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2875E4512A5424C400CB5BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2875E4532A5424C400CB5BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2875E45E2A54280200CB5BE7 /* Tracker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tracker.storyboard; sourceTree = "<group>"; };
+		2875E4602A542B1100CB5BE7 /* Planer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planer.storyboard; sourceTree = "<group>"; };
+		2875E4622A542B9A00CB5BE7 /* Diary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		2875E4442A5424C300CB5BE7 /* MyHelper */ = {
 			isa = PBXGroup;
 			children = (
-				2875E4452A5424C300CB5BE7 /* AppDelegate.swift */,
-				2875E4472A5424C300CB5BE7 /* SceneDelegate.swift */,
+				2875E45A2A54277100CB5BE7 /* Modules */,
+				2875E4592A54272F00CB5BE7 /* ApplicationLifecycle */,
 				2875E4492A5424C300CB5BE7 /* ViewController.swift */,
 				2875E44B2A5424C300CB5BE7 /* Main.storyboard */,
 				2875E44E2A5424C400CB5BE7 /* Assets.xcassets */,
-				2875E4502A5424C400CB5BE7 /* LaunchScreen.storyboard */,
 				2875E4532A5424C400CB5BE7 /* Info.plist */,
 			);
 			path = MyHelper;
+			sourceTree = "<group>";
+		};
+		2875E4592A54272F00CB5BE7 /* ApplicationLifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				2875E4472A5424C300CB5BE7 /* SceneDelegate.swift */,
+				2875E4452A5424C300CB5BE7 /* AppDelegate.swift */,
+				2875E4502A5424C400CB5BE7 /* LaunchScreen.storyboard */,
+			);
+			path = ApplicationLifecycle;
+			sourceTree = "<group>";
+		};
+		2875E45A2A54277100CB5BE7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2875E45D2A5427D600CB5BE7 /* Diary */,
+				2875E45C2A5427A900CB5BE7 /* Planer */,
+				2875E45B2A54278400CB5BE7 /* Tracker */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2875E45B2A54278400CB5BE7 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				2875E45E2A54280200CB5BE7 /* Tracker.storyboard */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		2875E45C2A5427A900CB5BE7 /* Planer */ = {
+			isa = PBXGroup;
+			children = (
+				2875E4602A542B1100CB5BE7 /* Planer.storyboard */,
+			);
+			path = Planer;
+			sourceTree = "<group>";
+		};
+		2875E45D2A5427D600CB5BE7 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				2875E4622A542B9A00CB5BE7 /* Diary.storyboard */,
+			);
+			path = Diary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +143,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					123,
+				);
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
@@ -126,6 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2875E4522A5424C400CB5BE7 /* LaunchScreen.storyboard in Resources */,
+				2875E45F2A54280200CB5BE7 /* Tracker.storyboard in Resources */,
+				2875E4632A542B9A00CB5BE7 /* Diary.storyboard in Resources */,
+				2875E4612A542B1100CB5BE7 /* Planer.storyboard in Resources */,
 				2875E44F2A5424C400CB5BE7 /* Assets.xcassets in Resources */,
 				2875E44D2A5424C300CB5BE7 /* Main.storyboard in Resources */,
 			);
