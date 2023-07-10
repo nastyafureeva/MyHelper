@@ -37,8 +37,8 @@
 		2875E4602A542B1100CB5BE7 /* Planer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planer.storyboard; sourceTree = "<group>"; };
 		2875E4622A542B9A00CB5BE7 /* Diary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		28FDBD962A58BE0400EED710 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
-		28FE50782A58947900D5BD57 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarCell.swift; path = ../../../../../../Documents/CalendarCell.swift; sourceTree = "<group>"; };
-		28FE507E2A5897EF00D5BD57 /* PlanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanerViewController.swift; path = ../../../../../../Documents/PlanerViewController.swift; sourceTree = "<group>"; };
+		28FE50782A58947900D5BD57 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		28FE507E2A5897EF00D5BD57 /* PlanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanerViewController.swift; sourceTree = "<group>"; };
 		DDBDA3222A59B9BC00CD76FA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		DDBDA3242A59B9E800CD76FA /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		DDBDA3262A59BA0700CD76FA /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
