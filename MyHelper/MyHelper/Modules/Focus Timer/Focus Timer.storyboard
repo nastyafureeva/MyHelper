@@ -11,14 +11,13 @@
         <!--Focus Timer-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="Focus Timer" id="Y6W-OH-hqX" customClass="FocusTimerViewController" sceneMemberID="viewController">
+                <viewController title="Focus Timer" id="Y6W-OH-hqX" customClass="FocusTimerViewController" customModule="MyHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Focus Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-rM-fTQ">
-                                <rect key="frame" x="117" y="59" width="159" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-rM-fTQ">
+                                <rect key="frame" x="117.33333333333333" y="59" width="158.33333333333337" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,11 +28,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </datePicker>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pzh-Oo-Ca2">
-                                <rect key="frame" x="100" y="497.99999999999989" width="193" height="251.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pzh-Oo-Ca2">
+                                <rect key="frame" x="0.0" y="498.00000000000006" width="393" height="251.66666666666669"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYi-fx-ANZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="193" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                         <connections>
@@ -41,50 +40,43 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-h2-O3s">
-                                        <rect key="frame" x="0.0" y="54.333333333333329" width="193" height="34.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333371" width="393" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Pause"/>
                                         <connections>
                                             <action selector="pauseButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Z6-EI-HFd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0N-0F-ml4">
-                                        <rect key="frame" x="0.0" y="108.66666666666667" width="193" height="34.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4os-At-bKV">
+                                        <rect key="frame" x="0.0" y="108.66666666666663" width="393" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="              Reset"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset"/>
                                         <connections>
-                                            <action selector="resetButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jak-tE-Vbt"/>
+                                            <action selector="resetButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UDT-ly-S5h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-PQ-Qty">
-                                        <rect key="frame" x="0.0" y="163" width="193" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="163" width="393" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+15 minutes"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+15 seconds"/>
                                         <connections>
                                             <action selector="plusButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LHr-w0-JeL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlh-4Q-lZZ">
-                                        <rect key="frame" x="0.0" y="217.33333333333334" width="193" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="217.33333333333337" width="393" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="-15 minutes"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-15 seconds"/>
                                         <connections>
-                                            <action selector="minusButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8sQ-J2-0pX"/>
+                                            <action selector="minusButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aNc-sq-yMe"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.61568629740000003" green="0.52156865600000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="vY4-PQ-Qty" firstAttribute="leading" secondItem="Pzh-Oo-Ca2" secondAttribute="leading" constant="40" id="2Cj-3B-I81"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="P9a-v6-dIH"/>
-                                    <constraint firstAttribute="trailing" secondItem="vY4-PQ-Qty" secondAttribute="trailing" constant="40" id="ef2-TP-JnG"/>
-                                    <constraint firstItem="vlh-4Q-lZZ" firstAttribute="top" secondItem="vY4-PQ-Qty" secondAttribute="bottom" constant="200" id="h1q-tc-hW1"/>
-                                    <constraint firstAttribute="width" constant="200" id="zad-b9-sYm"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-OC-rZL">
-                                <rect key="frame" x="103.66666666666667" y="245" width="185.66666666666663" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-OC-rZL">
+                                <rect key="frame" x="103.66666666666667" y="244.99999999999997" width="185.66666666666663" height="83.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.61568629740000003" green="0.52156865600000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -95,13 +87,13 @@
                         <color key="tintColor" red="0.71764707569999997" green="0.6784313917" blue="0.63529413940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzh-Oo-Ca2" secondAttribute="trailing" id="0Db-M6-zyP"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzh-Oo-Ca2" secondAttribute="trailing" constant="100" id="73U-Xl-xXx"/>
-                            <constraint firstItem="Pzh-Oo-Ca2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="APT-Mv-1N5"/>
-                            <constraint firstItem="Pzh-Oo-Ca2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IPo-8P-GlC"/>
-                            <constraint firstItem="Pzh-Oo-Ca2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="K59-aa-roA"/>
+                            <constraint firstItem="DzV-OC-rZL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="245" id="DZB-fG-lCT"/>
                             <constraint firstItem="DzV-OC-rZL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WDM-D6-Jrn"/>
                             <constraint firstItem="Pzh-Oo-Ca2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="et1-wv-aum"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzh-Oo-Ca2" secondAttribute="trailing" id="hAO-9P-c7r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Pzh-Oo-Ca2" secondAttribute="bottom" constant="19.333333333333485" id="tPg-yt-crY"/>
+                            <constraint firstItem="DzV-OC-rZL" firstAttribute="centerX" secondItem="mok-rM-fTQ" secondAttribute="centerX" id="tdD-LT-GeW"/>
+                            <constraint firstItem="mok-rM-fTQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yAm-q7-ScU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Focus Timer " image="timelapse" catalog="system" landscapeImage="timelapse" selectedImage="timelapse" id="klC-cc-SXl">
@@ -109,10 +101,10 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="minusButton" destination="vlh-4Q-lZZ" id="QA9-z3-AOA"/>
+                        <outlet property="minusButton" destination="vlh-4Q-lZZ" id="4uW-D5-fJY"/>
                         <outlet property="pauseButton" destination="fRS-h2-O3s" id="AYh-KL-8uo"/>
                         <outlet property="plusButton" destination="vY4-PQ-Qty" id="KQG-mV-gWp"/>
-                        <outlet property="resetButton" destination="M0N-0F-ml4" id="dD8-0L-9Ah"/>
+                        <outlet property="resetButton" destination="4os-At-bKV" id="9sN-Vk-o1c"/>
                         <outlet property="startButton" destination="tYi-fx-ANZ" id="feL-vI-u4u"/>
                         <outlet property="timeLabel" destination="DzV-OC-rZL" id="PCq-vR-PkT"/>
                     </connections>

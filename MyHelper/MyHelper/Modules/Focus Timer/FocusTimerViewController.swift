@@ -15,37 +15,48 @@ class FocusTimerViewController: ViewController{
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
+    
     var timer = Timer()
-    var minutes = 60
+    var seconds = 60
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func startButton(_ sender: Any) {
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 1,target: self,selector: #selector(FocusTimerViewController.timerClass),userInfo: nil,repeats: true)
+        if (seconds != 0){
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 1,target: self,selector: #selector(FocusTimerViewController.timerClass),userInfo: nil,repeats: true)
+        }
     }
+    
     @IBAction func pauseButton(_ sender: Any) {
         timer.invalidate()
     }
+    
     @IBAction func resetButton(_ sender: Any) {
         timer.invalidate()
-        minutes = 60;
-        timeLabel.text = String(minutes)
+        seconds = 60;
+        timeLabel.text = String(seconds)
     }
+    
     @IBAction func plusButton(_ sender: Any) {
-        minutes = minutes + 15
-        timeLabel.text = String(minutes)
+        seconds = seconds + 15
+        timeLabel.text = String(seconds)
     }
+    
     @IBAction func minusButton(_ sender: Any) {
-        minutes = minutes - 15
-        timeLabel.text = String(minutes)
+        if (seconds != 0){
+            seconds = seconds - 15
+            timeLabel.text = String(seconds)
+        }
     }
     
     @objc func timerClass(){
-        minutes -= 1
-        timeLabel.text = String(minutes)
+        seconds -= 1
+        timeLabel.text = String(seconds)
         
-        if (minutes == 0){
+        if (seconds == 0){
             timer.invalidate()
         }
     }
