@@ -11,14 +11,13 @@
         <!--Focus Timer-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="Focus Timer" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="Focus Timer" id="Y6W-OH-hqX" customClass="FocusTimerViewController" customModule="MyHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Focus Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-rM-fTQ">
-                                <rect key="frame" x="117" y="59" width="159" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mok-rM-fTQ">
+                                <rect key="frame" x="117.33333333333333" y="59" width="158.33333333333337" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,31 +28,76 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtB-wT-ydM">
-                                <rect key="frame" x="16" y="544" width="361" height="54"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-NE-nNA">
-                                <rect key="frame" x="129" y="636" width="135" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start" cornerStyle="dynamic">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.61568629740000003" green="0.52156865600000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" red="0.97254902119999997" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pzh-Oo-Ca2">
+                                <rect key="frame" x="0.0" y="552.33333333333337" width="393" height="197.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYi-fx-ANZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                        <connections>
+                                            <action selector="startButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hax-jv-KXL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-h2-O3s">
+                                        <rect key="frame" x="0.0" y="54.333333333333258" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Z6-EI-HFd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4os-At-bKV">
+                                        <rect key="frame" x="0.0" y="108.66666666666663" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UDT-ly-S5h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cr-e7-BPC">
+                                        <rect key="frame" x="0.0" y="163" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="New Time"/>
+                                        <connections>
+                                            <action selector="newTime:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1ov-sO-108"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.61568629740000003" green="0.52156865600000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-OC-rZL">
+                                <rect key="frame" x="53.666666666666657" y="244.99999999999997" width="286" height="83.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.61568629740000003" green="0.52156865600000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" red="0.71764707569999997" green="0.6784313917" blue="0.63529413940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzh-Oo-Ca2" secondAttribute="trailing" id="0Db-M6-zyP"/>
+                            <constraint firstItem="DzV-OC-rZL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="245" id="DZB-fG-lCT"/>
+                            <constraint firstItem="DzV-OC-rZL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WDM-D6-Jrn"/>
+                            <constraint firstItem="Pzh-Oo-Ca2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="et1-wv-aum"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pzh-Oo-Ca2" secondAttribute="trailing" id="hAO-9P-c7r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Pzh-Oo-Ca2" secondAttribute="bottom" constant="19.333333333333485" id="tPg-yt-crY"/>
+                            <constraint firstItem="DzV-OC-rZL" firstAttribute="centerX" secondItem="mok-rM-fTQ" secondAttribute="centerX" id="tdD-LT-GeW"/>
+                            <constraint firstItem="mok-rM-fTQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yAm-q7-ScU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Focus Timer " image="timelapse" catalog="system" landscapeImage="timelapse" selectedImage="timelapse" id="klC-cc-SXl">
                         <color key="badgeColor" systemColor="systemBrownColor"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="fRS-h2-O3s" id="AYh-KL-8uo"/>
+                        <outlet property="resetButton" destination="4os-At-bKV" id="9sN-Vk-o1c"/>
+                        <outlet property="startButton" destination="tYi-fx-ANZ" id="feL-vI-u4u"/>
+                        <outlet property="timeLabel" destination="DzV-OC-rZL" id="PCq-vR-PkT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,9 +109,6 @@
         <image name="timelapse" catalog="system" width="128" height="124"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
