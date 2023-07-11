@@ -217,6 +217,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoK-cj-fkB">
                                 <rect key="frame" x="0.0" y="126.99999999999999" width="141.66666666666666" height="31.333333333333329"/>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" image="arrowshape.turn.up.left.circle.fill" catalog="system">
                                     <color key="titleShadowColor" systemColor="systemBrownColor"/>
                                 </state>
