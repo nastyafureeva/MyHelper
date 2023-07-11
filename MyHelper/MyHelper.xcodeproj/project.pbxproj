@@ -22,6 +22,7 @@
 		DDBDA3232A59B9BC00CD76FA /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBDA3222A59B9BC00CD76FA /* DiaryViewController.swift */; };
 		DDBDA3252A59B9E800CD76FA /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBDA3242A59B9E800CD76FA /* NoteViewController.swift */; };
 		DDBDA3272A59BA0700CD76FA /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBDA3262A59BA0700CD76FA /* EntryViewController.swift */; };
+		F03B56852A5D38F300F6BCB6 /* FocusTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03B56842A5D38F300F6BCB6 /* FocusTimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DDBDA3222A59B9BC00CD76FA /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		DDBDA3242A59B9E800CD76FA /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		DDBDA3262A59BA0700CD76FA /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		F03B56842A5D38F300F6BCB6 /* FocusTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				2875E45E2A54280200CB5BE7 /* Focus Timer.storyboard */,
+				F03B56842A5D38F300F6BCB6 /* FocusTimerViewController.swift */,
 			);
 			path = "Focus Timer";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				28FDBD972A58BE0400EED710 /* CalendarHelper.swift in Sources */,
 				28FE507F2A5897EF00D5BD57 /* PlanerViewController.swift in Sources */,
 				DDBDA3232A59B9BC00CD76FA /* DiaryViewController.swift in Sources */,
+				F03B56852A5D38F300F6BCB6 /* FocusTimerViewController.swift in Sources */,
 				DDBDA3272A59BA0700CD76FA /* EntryViewController.swift in Sources */,
 				28FE50792A58947900D5BD57 /* CalendarCell.swift in Sources */,
 				2875E4462A5424C300CB5BE7 /* AppDelegate.swift in Sources */,
