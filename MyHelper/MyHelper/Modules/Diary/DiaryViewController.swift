@@ -66,5 +66,14 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         vc.note = model.note
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    // Delete
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            models.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 
 }
