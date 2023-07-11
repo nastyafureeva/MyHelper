@@ -35,6 +35,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         totalSquares.removeAll()
         
         var current = CalendarHelper().sundayForDate(date: selectedDate)
+        current = CalendarHelper().addDays(date: current, days: 1)
         let nextSunday = CalendarHelper().addDays(date: current, days: 7)
         
         while (current < nextSunday)
