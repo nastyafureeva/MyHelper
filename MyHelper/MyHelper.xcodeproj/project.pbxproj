@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2821D7202A5E13C0000C8584 /* FocusTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D71F2A5E13C0000C8584 /* FocusTimerViewController.swift */; };
 		2875E4462A5424C300CB5BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2875E4452A5424C300CB5BE7 /* AppDelegate.swift */; };
 		2875E4482A5424C300CB5BE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2875E4472A5424C300CB5BE7 /* SceneDelegate.swift */; };
 		2875E44A2A5424C300CB5BE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2875E4492A5424C300CB5BE7 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2821D71F2A5E13C0000C8584 /* FocusTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusTimerViewController.swift; sourceTree = "<group>"; };
 		2875E4422A5424C300CB5BE7 /* MyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2875E4452A5424C300CB5BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2875E4472A5424C300CB5BE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				2875E45E2A54280200CB5BE7 /* Focus Timer.storyboard */,
+				2821D71F2A5E13C0000C8584 /* FocusTimerViewController.swift */,
 			);
 			path = "Focus Timer";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				DDBDA3232A59B9BC00CD76FA /* DiaryViewController.swift in Sources */,
 				DDBDA3272A59BA0700CD76FA /* EntryViewController.swift in Sources */,
 				28FE50792A58947900D5BD57 /* CalendarCell.swift in Sources */,
+				2821D7202A5E13C0000C8584 /* FocusTimerViewController.swift in Sources */,
 				2875E4462A5424C300CB5BE7 /* AppDelegate.swift in Sources */,
 				2875E4482A5424C300CB5BE7 /* SceneDelegate.swift in Sources */,
 			);
