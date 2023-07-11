@@ -57,7 +57,7 @@ class CalendarHelper
     func weekDay(date: Date) -> Int
     {
         let components = calendar.dateComponents([.weekday], from: date)
-        return components.weekday! - 1
+        return components.weekday! - 2
     }
     
     func addDays(date: Date, days: Int) -> Date
@@ -81,5 +81,6 @@ class CalendarHelper
         }
         return current
     }
+    
     
 }

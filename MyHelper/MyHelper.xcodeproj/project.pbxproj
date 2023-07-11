@@ -16,6 +16,10 @@
 		2875E45F2A54280200CB5BE7 /* Focus Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E45E2A54280200CB5BE7 /* Focus Timer.storyboard */; };
 		2875E4612A542B1100CB5BE7 /* Planer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E4602A542B1100CB5BE7 /* Planer.storyboard */; };
 		2875E4632A542B9A00CB5BE7 /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2875E4622A542B9A00CB5BE7 /* Diary.storyboard */; };
+		28D10A422A5CBD6D002D9BBA /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D10A412A5CBD6D002D9BBA /* WeeklyViewController.swift */; };
+		28D10A442A5CCD80002D9BBA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D10A432A5CCD80002D9BBA /* Event.swift */; };
+		28D10A462A5CCD9D002D9BBA /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D10A452A5CCD9D002D9BBA /* EventCell.swift */; };
+		28D10A482A5CCDA8002D9BBA /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D10A472A5CCDA7002D9BBA /* EventEditViewController.swift */; };
 		28FDBD972A58BE0400EED710 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FDBD962A58BE0400EED710 /* CalendarHelper.swift */; };
 		28FE50792A58947900D5BD57 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE50782A58947900D5BD57 /* CalendarCell.swift */; };
 		28FE507F2A5897EF00D5BD57 /* PlanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE507E2A5897EF00D5BD57 /* PlanerViewController.swift */; };
@@ -36,6 +40,10 @@
 		2875E45E2A54280200CB5BE7 /* Focus Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Focus Timer.storyboard"; sourceTree = "<group>"; };
 		2875E4602A542B1100CB5BE7 /* Planer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planer.storyboard; sourceTree = "<group>"; };
 		2875E4622A542B9A00CB5BE7 /* Diary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		28D10A412A5CBD6D002D9BBA /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		28D10A432A5CCD80002D9BBA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		28D10A452A5CCD9D002D9BBA /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		28D10A472A5CCDA7002D9BBA /* EventEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		28FDBD962A58BE0400EED710 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		28FE50782A58947900D5BD57 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		28FE507E2A5897EF00D5BD57 /* PlanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanerViewController.swift; sourceTree = "<group>"; };
@@ -115,10 +123,14 @@
 		2875E45C2A5427A900CB5BE7 /* Planer */ = {
 			isa = PBXGroup;
 			children = (
+				28D10A472A5CCDA7002D9BBA /* EventEditViewController.swift */,
+				28D10A452A5CCD9D002D9BBA /* EventCell.swift */,
+				28D10A432A5CCD80002D9BBA /* Event.swift */,
 				2875E4602A542B1100CB5BE7 /* Planer.storyboard */,
 				28FE50782A58947900D5BD57 /* CalendarCell.swift */,
 				28FE507E2A5897EF00D5BD57 /* PlanerViewController.swift */,
 				28FDBD962A58BE0400EED710 /* CalendarHelper.swift */,
+				28D10A412A5CBD6D002D9BBA /* WeeklyViewController.swift */,
 			);
 			path = Planer;
 			sourceTree = "<group>";
@@ -212,8 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBDA3252A59B9E800CD76FA /* NoteViewController.swift in Sources */,
+				28D10A482A5CCDA8002D9BBA /* EventEditViewController.swift in Sources */,
+				28D10A442A5CCD80002D9BBA /* Event.swift in Sources */,
 				2875E44A2A5424C300CB5BE7 /* ViewController.swift in Sources */,
 				28FDBD972A58BE0400EED710 /* CalendarHelper.swift in Sources */,
+				28D10A462A5CCD9D002D9BBA /* EventCell.swift in Sources */,
+				28D10A422A5CBD6D002D9BBA /* WeeklyViewController.swift in Sources */,
 				28FE507F2A5897EF00D5BD57 /* PlanerViewController.swift in Sources */,
 				DDBDA3232A59B9BC00CD76FA /* DiaryViewController.swift in Sources */,
 				DDBDA3272A59BA0700CD76FA /* EntryViewController.swift in Sources */,
